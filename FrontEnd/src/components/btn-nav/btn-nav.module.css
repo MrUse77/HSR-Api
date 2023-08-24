@@ -1,0 +1,21 @@
+.category {
+  background-color: var(--bg-btn);
+  color: white;
+  width: 10rem;
+  position: relative;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.category:hover {
+  border-bottom: 1px solid white;
+}
+.categoryActive {
+  border-bottom: 1px solid white;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+li {
+  width: 10rem;
+  text-align: center;
+}

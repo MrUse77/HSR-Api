@@ -1,0 +1,22 @@
+header {
+  background-color: var(--bg-nav);
+}
+.navbar {
+  height: 3rem;
+  display: flex;
+}
+.ulNav {
+  width: 50vw;
+  display: flex;
+  margin: auto;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 950px) {
+  .ulNav {
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem 0 1rem;
+  }
+}
