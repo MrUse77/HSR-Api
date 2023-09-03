@@ -2,8 +2,8 @@ import { Header } from "../../components/navbar/header";
 import styles from "./home.module.css";
 import { useSpring, animated } from "react-spring";
 import { useEffect, useState } from "react";
-import { NewsComp } from "../../components/newsComp/newsComp";
-import { Personajes } from "../../components/personajes/personajes";
+import { NewsComp } from "../../components/newsComp/NewsComp.jsx";
+import { Personajes } from "../../components/personajes/personajes.jsx";
 
 export function Home() {
   const [showImage, setShowImage] = useState(false);

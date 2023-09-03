@@ -39,4 +39,7 @@ main {
 }
 body {
   overflow: auto;
+  background-image: url("/assets/BG-hsr.png");
+  background-size: cover;
+  background-attachment: fixed;
 }

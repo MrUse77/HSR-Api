@@ -1,5 +1,5 @@
 import { Header } from "../../components/navbar/header";
-export function News() {
+export function Materials() {
   return (
     <>
       <Header />

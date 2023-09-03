@@ -24,9 +24,6 @@
   width: 50%;
 }
 .container2 {
-  background-image: url("/assets/BG-hsr.png");
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +51,6 @@
   height: 100%;
   margin: 2rem;
 }
-section {
+.sections {
   min-height: 50vh;
 }
