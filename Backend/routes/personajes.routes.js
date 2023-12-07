@@ -5,8 +5,17 @@ const pjRouter = express.Router();
 
 pjRouter.get("/get", async (req, res) => {
   try {
-    const result = await personajes.find({});
-    res.json({ data: result });
+    const result = await personajes.find();
+    res.send(result);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
+pjRouter.get("/get/:name", async (req, res) => {
+  try {
+    //buscar por nombre
+    const result = await personajes.findOne({ name: req.params.name });
+    res.send(result);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -24,7 +33,7 @@ pjRouter.post(
       faction: req.body.faction,
     });
     const result = await pj.save();
-    res.json({ result });
+    res.send(result);
   })
 );
 

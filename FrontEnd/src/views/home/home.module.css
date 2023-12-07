@@ -1,6 +1,7 @@
 .hsrLogo {
   height: 25rem;
   margin: 0.5rem;
+  object-fit: contain;
 }
 .container,
 .container2 {
@@ -24,9 +25,9 @@
   width: 50%;
 }
 .container2 {
-  background-image: url("/assets/BG-hsr.png");
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: auto;
+  background-attachment: local;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,4 +57,14 @@
 }
 section {
   min-height: 50vh;
+  width: 90vw;
+  margin: 1rem auto;
+}
+.sectionPJ {
+  background-image: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }

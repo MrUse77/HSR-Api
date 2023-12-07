@@ -4,17 +4,29 @@ import { useSpring, animated } from "react-spring";
 import { useEffect, useState } from "react";
 import { NewsComp } from "../../components/newsComp/newsComp";
 import { Personajes } from "../../components/personajes/personajes";
+import personajesService from "../../service/personajes";
 
 export function Home() {
   const [showImage, setShowImage] = useState(false);
+  const [personajes, setPersonajes] = useState([]);
 
   useEffect(() => {
-    // Después de 2 segundos, mostrar la imagen
+    const fetchPersonajes = async () => {
+      try {
+        const pj = await personajesService.getPersonajes();
+        setPersonajes(pj);
+      } catch (error) {
+        console.error("Error fetching personajes:", error);
+      }
+    };
+
     const timeout = setTimeout(() => {
       setShowImage(true);
-    }, 1000);
+    }, 2000);
 
-    // Limpieza del timeout cuando el componente se desmonta
+    fetchPersonajes();
+    console.log(personajes);
+
     return () => clearTimeout(timeout);
   }, []);
 
@@ -38,18 +50,20 @@ export function Home() {
           </animated.div>
           <section className={styles.sections}>
             <div className={styles.newsTitle}>
-              <h1 className={styles.title}>Noticias</h1>
-            </div>
-            <div className={styles.news}>
-              <NewsComp />
-            </div>
-          </section>
-          <section className={styles.sections}>
-            <div className={styles.newsTitle}>
               <h1 className={styles.title}>Personajes</h1>
             </div>
-            <div className={styles.pj}>
-              <Personajes />
+            <div className={styles.sectionPJ}>
+              {personajes.length > 1 ? (
+                personajes.map((pjs) => (
+                  <div className={styles.pj}>
+                    <Personajes personajes={pjs} />
+                  </div>
+                ))
+              ) : personajes.length === 1 ? (
+                <div className={styles.pj}>
+                  <Personajes personajes={personajes[0]} />
+                </div>
+              ) : null}
             </div>
           </section>
         </div>

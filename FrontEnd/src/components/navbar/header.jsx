@@ -8,7 +8,6 @@ export function Header() {
         <ul className={styles.ulNav}>
           <BtnNav link="/" name="Inicio" />
           <BtnNav link="/characters" name="Personajes" />
-          <BtnNav link="/news" name="Novedades" />
         </ul>
       </nav>
     </header>

@@ -1,0 +1,56 @@
+.filter {
+  display: flex;
+  flex-direction: row;
+  min-height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.625rem;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0 0 1rem 0;
+}
+.character {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.625rem;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 0 1rem 0;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.625rem;
+  margin: auto;
+  padding: 1rem 0 1rem 0;
+  min-height: 5rem;
+}
+.sectionPJ {
+  background-image: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.body {
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  min-height: 100vh;
+}
+body {
+  background-image: url("/assets/BG-hsr.png");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.body h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
