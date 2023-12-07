@@ -2,7 +2,6 @@ import { Header } from "../../components/navbar/header";
 import styles from "./home.module.css";
 import { useSpring, animated } from "react-spring";
 import { useEffect, useState } from "react";
-import { NewsComp } from "../../components/newsComp/newsComp";
 import { Personajes } from "../../components/personajes/personajes";
 import personajesService from "../../service/personajes";
 
