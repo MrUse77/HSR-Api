@@ -24,7 +24,6 @@ export function Home() {
     }, 2000);
 
     fetchPersonajes();
-    console.log(personajes);
 
     return () => clearTimeout(timeout);
   }, []);

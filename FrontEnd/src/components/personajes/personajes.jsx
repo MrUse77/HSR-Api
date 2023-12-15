@@ -16,7 +16,6 @@ export function Personajes({ personajes }) {
   } else {
     nameUrl = name;
   }
-  console.log(nameUrl);
   // pasar de mayuscula a minuscula
   const url = `/characters/${nameUrl}`;
 

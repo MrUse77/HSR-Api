@@ -83,3 +83,36 @@ img {
   -webkit-backdrop-filter: blur(10px);
   border-radius: 0 0 10px 10px;
 }
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+    align-items: center;
+  }
+  .profile {
+    width: 90vw;
+    height: 100%;
+    max-width: 90vw;
+  }
+  div h2 {
+    font-size: 2rem;
+  }
+  .info {
+    width: 90vw;
+    max-width: 90vw;
+    min-height: 100vh;
+    max-height: max-content;
+    height: auto;
+  }
+  .infoContainer {
+    display: block;
+  }
+  .details {
+    width: 90vw;
+    max-width: 90vw;
+    min-height: 100vh;
+    height: auto;
+  }
+}
