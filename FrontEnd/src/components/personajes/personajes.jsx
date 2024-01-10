@@ -2,8 +2,7 @@ import styles from "./personajes.module.css";
 export const idPjImg = (path) => {
   //recortar el path desde la izquierda y desde la derecha
   //para obtener el id de la imagen
-  const id = path.split("/");
-  const img = `https://drive.google.com/uc?export=view&id=${id[5]}`;
+  const img = path + "&raw=1";
   return img;
 };
 export function Personajes({ personajes }) {
@@ -37,11 +36,7 @@ export function Personaje() {
     <>
       <div className={styles.card2}>
         <div className={styles.cardBody}>
-          <img
-            src="https://drive.google.com/uc?export=view&id=11q0ESFR4QUjROs5J-KzkqUv9eTwjcQ8n"
-            alt="image"
-            className={styles.img}
-          />
+          <img src={img} alt="image" className={styles.img} />
         </div>
       </div>
     </>

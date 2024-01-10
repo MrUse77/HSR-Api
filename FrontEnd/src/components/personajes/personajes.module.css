@@ -47,6 +47,6 @@
     margin: 0;
   }
   .cardTitle {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 }

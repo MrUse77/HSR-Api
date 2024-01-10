@@ -6,22 +6,22 @@ import style from "./character.module.css";
 import { idPjImg } from "../../components/personajes/personajes";
 
 const urlsDriveTipos = [
-  "https://drive.google.com/file/d/19npGXQ2kxhV2iNdYjfZsfqIEwjgl1dwG/view?usp=drive_link",
-  "https://drive.google.com/file/d/1BHd-BDh2PMdoPEFHkgAmEYndg7KNGQIj/view?usp=drive_link",
-  "https://drive.google.com/file/d/1l8QTx3NuMvJxSF9v_x9IBKoP2M5ncETv/view?usp=drive_link",
-  "https://drive.google.com/file/d/1FducEs_Hed740YU7bFLE5nEUgRuS5rWJ/view?usp=drive_link",
-  "https://drive.google.com/file/d/1BVJ5I5iaewuxFaLlIB88qqZA8t_JMMp1/view?usp=drive_link",
-  "https://drive.google.com/file/d/1yvzdUfTlzcrkEwV9a8CNl13okA-zGD5V/view?usp=drive_link",
-  "https://drive.google.com/file/d/1L2sinD-iowFXNf6zdtI1a71lximMAlgd/view?usp=drive_link",
+  "https://www.dropbox.com/scl/fi/56aal0v6jr3iqcd2h7u6m/Hielo.png?rlkey=ftrqagt3841zv4a7eo9ternlf&dl=0",
+  "https://www.dropbox.com/scl/fi/8ab0jsrpvlh6kvsl5g47v/Rayo.png?rlkey=dzn9wp9wb1i6c8ujte83damv8&dl=0",
+  "https://www.dropbox.com/scl/fi/79pg2qa97th01y1o6zeim/Viento.png?rlkey=jsy9wveyem8smpe7i1ltl1kkx&dl=0",
+  "https://www.dropbox.com/scl/fi/uupnwa9admn6j0fxflb3b/Cuantico.png?rlkey=jdbntjhwmnb6zsi6wgtawzpv7&dl=0",
+  "https://www.dropbox.com/scl/fi/pgkdlghsd5kv1e9p6hsxu/Imaginario.png?rlkey=brloqmhgeofj6u60u69s4lnik&dl=0",
+  "https://www.dropbox.com/scl/fi/ld1sczz43lkqa276qi3nz/Fisico.png?rlkey=ffjdsxqk5xlx2houperthxuug&dl=0",
+  "https://www.dropbox.com/scl/fi/mxa26wo6sqgjp67jrwa3e/Fuego.png?rlkey=3j2zsy8h4e4ljy8v7o8vouofk&dl=0",
 ];
 const urlsDriveVias = [
-  "https://drive.google.com/file/d/10_yr1LFoIVsxjlxLLxOKEVFavp71J6-r/view?usp=drive_link",
-  "https://drive.google.com/file/d/1rECGd202xw62gvZkCEixvcDsOCqLNsus/view?usp=drive_link",
-  "https://drive.google.com/file/d/1X-3QLQSN_3Idp9bXuWuCcD_1OwuAVnHh/view?usp=drive_link",
-  "https://drive.google.com/file/d/1hoCGZ__Km5WTlfWCIY-nz1-sjjJbsI5-/view?usp=drive_link",
-  "https://drive.google.com/file/d/1BDKni29fNmFpJlc3tH8HHFNHICALKsxG/view?usp=drive_link",
-  "https://drive.google.com/file/d/1oevoBay3JLfcgRtbmIa_66e2Fg7BepjG/view?usp=drive_link",
-  "https://drive.google.com/file/d/1JC1i5o-GycbuGa85brI7kb2DL5r64k0P/view?usp=drive_link",
+  "https://www.dropbox.com/scl/fi/jhv2huq0i8hvmnpvamqjb/Armonia.png?rlkey=s2dq6h7b3rudcqvlh3tsty4f8&dl=0",
+  "https://www.dropbox.com/scl/fi/5baqlfrorrurxy4fhf9hi/Conservacion.png?rlkey=qpyqnyruxdvli88an297yh33h&dl=0",
+  "https://www.dropbox.com/scl/fi/b3i8f21h8kdmt4b6artsz/Abundancia.png?rlkey=t2hzsbq2y0qpjh4jtvjd8rs93&dl=0",
+  "https://www.dropbox.com/scl/fi/flfrq3f6f61yb3iovp6u7/Caceria.png?rlkey=ogpmwwbqb3s30fnwyq2xx4m0r&dl=0",
+  "https://www.dropbox.com/scl/fi/ewpdt5gzln1j5q4x4h2ct/Destruccion.png?rlkey=fzxrfs5orue2gv98alvlk44rl&dl=0",
+  "https://www.dropbox.com/scl/fi/w031n6o9h5ylfyes8p4lc/Nihilidad.png?rlkey=fvsju3hdpk75tlbzkmihc9kje&dl=0",
+  "https://www.dropbox.com/scl/fi/46e5ln3zrgfmw922hldwh/Erudicion.png?rlkey=3i6tsbcq8aph3svxye9rc52j6&dl=0",
 ];
 
 export function Character() {
